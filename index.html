@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorhat Cabs - Reliable & Affordable Transportation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #fc5b3f;
+            --secondary: #333;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --white: #ffffff;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cars.jpg') center/cover no-repeat;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 80px;
+        }
+
+        .hero-content {
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #e04a2f;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(252, 91, 63, 0.3);
+        }
+
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .service-card:hover .card-image img {
+            transform: scale(1.1);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .card-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        /* App Section */
+        .app {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, #ff8a65 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .app-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .app-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .app-content p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .app-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .app-btn {
+            display: flex;
+            align-items: center;
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .app-btn:hover {
+            background-color: var(--white);
+            color: var(--dark);
+        }
+
+        .app-btn i {
+            font-size: 1.8rem;
+            margin-right: 10px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .testimonial-card .quote {
+            margin-bottom: 20px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .testimonial-footer {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+
+        .testimonial-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-author h4 {
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .testimonial-author p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-col p {
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 0;
+                transition: left 0.3s;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .app-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .app-content h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">JORHAT<span>CABS</span></a>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#app">App</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Fast, Reliable Cab Service in Your City</h1>
+                <p class="fade-in">Book your ride instantly and travel comfortably with Fast Cab's professional drivers and modern fleet</p>
+                <a href="tel:+919864888946" class="btn fade-in">Call us <br>+91 9864888946</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer a variety of transportation solutions to meet your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-image">
+                        <img src="ergtica.jpg" alt="Modern gray sedan parked on city street with clean lines and alloy wheels">
+                    </div>
+                    <div class="card-content">
+                        <h3>City Rides</h3>
+                        <p>Quick and efficient transportation within the city limits.</p>
+                        <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-image">
+                        <img src="inova.jpg" alt="Black luxury car parked at airport terminal with professional driver waiting">
+                    </div>
+                    <div class="card-content">
+                        <h3>Airport Transfers</h3>
+                        <p>Timely airport pickups and drop-offs with flight tracking.</p>
+                        <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-image">
+                        <img src="minivan.jpg" alt="Spacious silver minivan with sliding doors parked near hotel entrance">
+                    </div>
+                    <div class="card-content">
+                        <h3>Group Travel</h3>
+                        <p>Comfortable transportation for groups and families.</p>
+                        <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="card-image">
+                        <img src="hillstation.jpg" alt="Spacious silver minivan with sliding doors parked near hotel entrance">
+                    </div>
+                    <div class="card-content">
+                        <h3>City to Outstation Cabs </h3>
+                        <p>Quick and efficient transportation all over North-East </p>
+                        <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="driver.jpg" alt="Friendly professional driver in uniform standing next to modern taxi cab">
+                </div>
+                <div class="about-text">
+                    <h2>About Jorhat Cabs</h2>
+                    <p>Founded in 2019, Jorhat Cabs has been providing reliable transportation services with a focus on customer satisfaction and safety.</p>
+                    <p>Our team of professional drivers undergo rigorous training and background checks to ensure your peace of mind during every ride.</p>
+                    <p>With a modern fleet of well-maintained vehicles, we're committed to delivering comfortable, efficient, and environmentally responsible transportation solutions.</p>
+                    <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied passengers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "Jorhat Cabs is my go-to service for airport transfers. The drivers are always punctual and the cars are spotless. Highly recommend!"
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-img">
+                            <img src="https://placehold.co/100x100" alt="Smiling male business traveler wearing glasses standing at airport terminal">
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Rishi Gogoi </h4>
+                            <p>Frequent Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "I use Fast Cab for my daily commute and they never disappoint. The drivers are courteous and the rates are competitive."
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-img">
+                            <img src="https://placehold.co/100x100" alt="Middle-aged male professional in suit holding briefcase in downtown setting">
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Montu Neog</h4>
+                            <p>Daily Commuter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "Booking through their fastcab is so convenient. I especially appreciate their on time arrivals."
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-img">
+                            <img src="https://placehold.co/100x100" alt="Smiling mother with two children standing outside elementary school">
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Anindita kalita</h4>
+                            <p>Parent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>JORHAT CABS</h3>
+                    <p>Providing reliable transportation services with a smile since 2024.</p>
+                
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> A.T Road, Pulibor Tiniali, Jorhat, Assam</p>
+                    <p><i class="fas fa-phone"></i> +91 9864888946 </p>
+                    <p><i class="fas fa-envelope"></i>jorhatbestcab@gmail.com</p>
+                </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Jorhat Cabs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                navLinks.classList.remove('active');
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Animation on Scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 50) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
