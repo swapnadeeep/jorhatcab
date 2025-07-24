@@ -4,22 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorhat Cabs - Reliable & Affordable Transportation</title>
-    <meta name="description"
-        content="Jorhat Cabs the most reliable and affordable cab service in Jorhat. Enjoy safe and punctual taxi rides across Jorhat, Assam with professional drivers.">
-    <meta name="keywords"
-        content="Reliable taxi service in Jorhat, 24/7 airport pickups, cab service in Jorhat, taxi service Jorhat, cab Jorhat, taxi Jorhat, Jorhat cabs, taxi Jorhat Assam, Jorhat cab, cabs Jorhat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Add favicon for branding -->
-    <link rel="icon" type="image/png" href="J-removebg-preview.png">
-    <!-- Open Graph for social media sharing -->
+    <title>Jorhat Cabs | Best Taxi Services in Jorhat</title>
+    <meta name="description" content="Book Jorhat Cabs for the most reliable and affordable cab service in Jorhat. Enjoy safe and punctual taxi rides across Jorhat, Assam with professional drivers.">
+    <meta name="keywords" content="Reliable taxi service in Jorhat, 24/7 airport pickups, cab service in Jorhat, taxi service Jorhat, cab Jorhat, taxi Jorhat, Jorhat cabs, taxi Jorhat Assam, Jorhat cab">
     <meta property="og:title" content="Jorhat Cabs - Best Cab Service in Assam">
     <meta property="og:description" content="Safe, reliable, and affordable cab service in Jorhat and Northeast India.">
     <meta property="og:image" content="https://jorhatcabs.co.in/preview.jpg">
     <meta property="og:url" content="https://jorhatcabs.co.in">
-    <meta name="twitter:card" content="summary_large_image">
-    <!-- Canonical tag -->
-    <link rel="canonical" href="https://jorhatcabs.co.in">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Assets/sedan.png">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -57,718 +52,379 @@
 
 }
         </script>
-    <style>
-        
-        :root {
-            --primary: #db3e23;
-            --secondary: #333;
-            --light: #98a5b1;
-            --dark: #212529;
-            --white: #c7c7c7;
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--light);
-            color: var(--secondary);
-            line-height: 1.6;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: var(--white);
-            box-shadow: var(--shadow);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .logo span {
-            color: var(--secondary);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin-left: 30px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--secondary);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        .mobile-menu {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cars.jpg') center/cover no-repeat;
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: var(--white);
-            margin-top: 80px;
-        }
-
-        .hero-content {
-            width: 100%;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 12px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background-color: #e04a2f;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 15px rgba(252, 91, 63, 0.3);
-        }
-
-
-        /* Services Section */
-        .services {
-            padding: 80px 0;
-            background-color: var(--white);
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 15px;
-        }
-
-        .section-title p {
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background-color: var(--light);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card-image {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-
-        .service-card:hover .card-image img {
-            transform: scale(1.1);
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-
-        .card-content p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        /* About Section */
-        .about {
-            padding: 80px 0;
-            background-color: var(--light);
-        }
-
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .about-image {
-            flex: 1;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-
-        .about-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--dark);
-        }
-
-        .about-text p {
-            margin-bottom: 20px;
-            color: #666;
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-            padding: 80px 0;
-            background-color: var(--white);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .testimonial-card {
-            background-color: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-        }
-
-        .testimonial-card .quote {
-            margin-bottom: 20px;
-            color: #666;
-            font-style: italic;
-        }
-
-        .testimonial-footer {
-            display: flex;
-            align-items: center;
-        }
-
-        .testimonial-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 15px;
-        }
-
-        .testimonial-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .testimonial-author h4 {
-            margin-bottom: 5px;
-            color: var(--dark);
-        }
-
-        .testimonial-author p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: var(--light);
-            padding: 60px 0 20px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .footer-col h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: var(--white);
-        }
-
-        .footer-col p {
-            margin-bottom: 20px;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a {
-            color: #aaa;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: var(--primary);
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: var(--white);
-            transition: all 0.3s;
-        }
-
-        .social-links a:hover {
-            background-color: var(--primary);
-            transform: translateY(-3px);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-            color: #aaa;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            .about-content {
-                flex-direction: column;
-            }
-
-            .about-image {
-                margin-bottom: 30px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .mobile-menu {
-                display: block;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 80px);
-                background-color: var(--white);
-                flex-direction: column;
-                align-items: center;
-                padding: 40px 0;
-                transition: left 0.3s;
-            }
-
-            .nav-links.active {
-                left: 0;
-            }
-
-            .nav-links li {
-                margin: 15px 0;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .form-row {
-                flex-direction: column;
-                gap: 0;
-            }
-
-            .app-buttons {
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .section-title h2 {
-                font-size: 2rem;
-            }
-
-            .app-content h2 {
-                font-size: 2rem;
-            }
-        }
-
-        /* Animation */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeIn 1s ease forwards;
-        }
-    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function () {
+                // Toggle the 'hidden' class to show/hide the mobile menu
+                mobileMenu.classList.toggle('hidden');
+
+                // Change the icon based on menu state
+                const icon = mobileMenuButton.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.querySelector('i').classList.remove('fa-times');
+                    mobileMenuButton.querySelector('i').classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
 </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">JORHAT<span>CABS</span></a>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div
+                            class="h-10 w-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            JC</div>
+                        <span class="ml-3 text-xl font-semibold text-blue-600">Jorhat Cabs</span>
+                    </div>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="booking.html">Book Now</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#services"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                    <a href="#fleets"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Our
+                        Fleets</a>
+                    <a href="#about"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                    <a href="#contact"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    <button
+                        class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300">Book
+                        Now</button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-    </header>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white shadow-lg border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Home</a>
+                <a href="#services"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Services</a>
+                <a href="#fleets"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Our
+                    Fleets</a>
+                <a href="#about"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">About
+                    Us</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100">Contact</a>
+                <button
+                    class="block w-full text-left bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300 mt-2">Book
+                    Now</button>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="fade-in">Fast, Reliable Cab Service in Your City & Outstation</h1>
-                <p class="fade-in">Book your ride instantly and travel comfortably with Jorhat Cabs professional drivers
-                    and modern fleet</p>
-                <a href="booking.html" class="btn fade-in" >Book Now</a>
-                <a href="tel:+919864888946" class="btn fade-in" >Call us</a>
+    <section id="home" class="hero-gradient text-white py-12 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-pulse">Need a reliable, affordable cab in
+                        Jorhat?</h1>
+                    <p class="text-lg md:text-xl mb-6">Jorhat Cabs offers 24/7 taxi service across Jorhat, Assam –
+                        including airport drops, local rides, outstation trips, and tourist pickups.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="booking.html"
+                            class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md font-medium transition duration-300">Book
+                            Now <i class="fas fa-arrow-right ml-2"></i></a>
+                        <a href="tel:+919864888946"
+                            class="bg-white hover:bg-gray-100 text-blue-600 px-6 py-3 rounded-md font-medium transition duration-300">Call
+                            Now <i class="fas fa-phone ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose Jorhat Cabs?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We provide the best cab services in Jorhat with
+                    certified drivers and well-maintained vehicles.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-car text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Safe Travel</h3>
+                    <p class="text-gray-600">GPS-enabled vehicles with trained drivers for safe journeys.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-wallet text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Affordable Rates</h3>
+                    <p class="text-gray-600">Competitive prices with no hidden charges.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">24/7 Availability</h3>
+                    <p class="text-gray-600">Round-the-clock service for your convenience.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Support</h3>
+                    <p class="text-gray-600">Dedicated customer support team.</p>
+                </div>
             </div>
         </div>
     </section>
-
 
     <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p>We offer a variety of transportation solutions to meet your needs</p>
+    <section id="services" class="py-12 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive cab services for all your
+                    transportation needs.</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="card-image">
-                        <img src="ergtica.jpg"
-                            alt="Modern gray sedan parked on city street with clean lines and alloy wheels">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="service-icon mb-4 text-blue-600 text-4xl transition duration-300">
+                        <i class="fas fa-plane-departure"></i>
                     </div>
-                    <div class="card-content">
-                        <h3>City Rides</h3>
-                        <p>Quick and efficient transportation within the city limits.</p>
-                        <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
-                        <a href="booking.html" class="btn fade-in" style="padding: 8px 20px;">Book Now</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="card-image">
-                        <img src="inova.jpg"
-                            alt="Black luxury car parked at airport terminal with professional driver waiting">
-                    </div>
-                    <div class="card-content">
-                        <h3>Airport Transfers</h3>
-                        <p>Timely airport pickups and drop-offs with flight tracking.</p>
-                        <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
-                        <a href="booking.html" class="btn fade-in" style="padding: 8px 20px;">Book Now</a>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Airport Transfer</h3>
+                    <p class="text-gray-600 mb-4">Timely airport pickups and drops with flight tracking.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Available 24/7</span>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="card-image">
-                        <img src="minivan.jpg"
-                            alt="Spacious silver minivan with sliding doors parked near hotel entrance">
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="service-icon mb-4 text-blue-600 text-4xl transition duration-300">
+                        <i class="fas fa-train"></i>
                     </div>
-                    <div class="card-content">
-                        <h3>Group Travel</h3>
-                        <p>Comfortable transportation for groups and families.</p>
-                        <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
-                        <a href="booking.html" class="btn fade-in" style="padding: 8px 20px;">Book Now</a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="card-image">
-                        <img src="hillstation.jpg"
-                            alt="Spacious silver minivan with sliding doors parked near hotel entrance">
-                    </div>
-                    <div class="card-content">
-                        <h3>City to Outstation Cabs </h3>
-                        <p>Quick and efficient transportation all over North-East </p>
-                        <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
-                        <a href="booking.html" class="btn fade-in" style="padding: 8px 20px;">Book Now</a>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Railway Station Drops</h3>
+                    <p class="text-gray-600 mb-4">On time railway station drops with train tracking </p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Available 24/7</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="driver.jpg"
-                        alt="Friendly professional driver in uniform standing next to modern taxi cab">
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="service-icon mb-4 text-blue-600 text-4xl transition duration-300">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">City Rides</h3>
+                    <p class="text-gray-600 mb-4">Convenient point-to-point travel within Jorhat.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Available 24/7</span>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h2>About Jorhat Cabs</h2>
-                    <p>Founded in 2019, Jorhat Cabs has been providing reliable transportation services with a focus on
-                        customer satisfaction and safety.</p>
-                    <p>Our team of professional drivers undergo rigorous training and background checks to ensure your
-                        peace of mind during every ride.</p>
-                    <p>With a modern fleet of well-maintained vehicles, we're committed to delivering comfortable,
-                        efficient, and environmentally responsible transportation solutions.</p>
-                        <a href="booking.html" class="btn fade-in" style="padding: 8px 20px;">Book Now</a>
-                    <a href="tel:+919864888946" class="btn" style="padding: 8px 20px;">Call us</a>
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="service-icon mb-4 text-blue-600 text-4xl transition duration-300">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Corporate Travel</h3>
+                    <p class="text-gray-600 mb-4">Reliable transportation for business professionals.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Available 24/7</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="service-icon mb-4 text-blue-600 text-4xl transition duration-300">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Special Events</h3>
+                    <p class="text-gray-600 mb-4">Transport for weddings, parties, and other occasions.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Available 24/7</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="service-icon mb-4 text-blue-600 text-4xl transition duration-300">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Out Station Rides</h3>
+                    <p class="text-gray-600 mb-4">We offers reliable outstation taxis with fixed fares and verified
+                        drivers. Safe, clean cars for trips across Assam</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Available 24/7</span>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="service-icon mb-4 text-blue-600 text-4xl transition duration-300">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Hourly Rentals</h3>
+                    <p class="text-gray-600 mb-4">Flexible hourly cab booking for multiple stops.</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Available 24/7</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>What Our Customers Say</h2>
-                <p>Don't just take our word for it - hear from our satisfied passengers</p>
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Hear from our satisfied customers about their
+                    experiences.</p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="quote">
-                        "Jorhat Cabs is my go-to service for airport transfers. The drivers are always punctual and the
-                        cars are spotless. Highly recommend!"
-                    </div>
-                    <div class="testimonial-footer">
-                        <div class="testimonial-img">
-                            <img src="man.png"
-                                alt="Smiling male business traveler wearing glasses standing at airport terminal">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="Assets/person.png" height="100px" width="100px"
+                                alt="Smiling middle-aged man wearing glasses" class="h-12 w-12 rounded-full" />
                         </div>
-                        <div class="testimonial-author">
-                            <h4>Rishi Gogoi </h4>
-                            <p>Frequent Traveler</p>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Dr. Manish Agarwal</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
+                    <p class="text-gray-600 mb-4">"Reliable service with courteous drivers. The airport transfer was
+                        perfectly timed with my flight arrival."</p>
+                    <div class="text-sm text-gray-500">January 15, 2023</div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="quote">
-                        "I use Jorhat Cabs for my daily commute and they never disappoint. The drivers are courteous and
-                        the rates are competitive."
-                    </div>
-                    <div class="testimonial-footer">
-                        <div class="testimonial-img">
-                            <img src="profile.png"
-                                alt="Middle-aged male professional in suit holding briefcase in downtown setting">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="Assets/businesswoman.png" height="100px" width="100px"
+                                alt="Young woman with long hair smiling at camera" class="h-12 w-12 rounded-full" />
                         </div>
-                        <div class="testimonial-author">
-                            <h4>Montu Neog</h4>
-                            <p>Daily Commuter</p>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Priyanka Deka</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
+                    <p class="text-gray-600 mb-4">"As a woman travelling alone, I always feel safe with Jorhat Cabs.
+                        Their drivers are especially reassuring."</p>
+                    <div class="text-sm text-gray-500">March 22, 2023</div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="quote">
-                        "Booking through their fastcab is so convenient. I especially appreciate their on time
-                        arrivals."
-                    </div>
-                    <div class="testimonial-footer">
-                        <div class="testimonial-img">
-                            <img src="woman.png"
-                                alt="Smiling mother with two children standing outside elementary school">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="Assets/man.png" height="100px" width="100px"
+                                alt="Elderly gentleman with white hair and formal shirt"
+                                class="h-12 w-12 rounded-full" />
                         </div>
-                        <div class="testimonial-author">
-                            <h4>Anindita kalita</h4>
-                            <p>Student</p>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-semibold text-gray-800">Mr. Hiren Saikia</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
                         </div>
                     </div>
+                    <p class="text-gray-600 mb-4">"Been using their service for my weekly medical appointments for
+                        years. Never late even once!"</p>
+                    <div class="text-sm text-gray-500">December 5, 2022</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>JORHAT CABS</h3>
-                    <p>Providing reliable transportation services with a smile since 2019.</p>
-
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-4">About Jorhat Cabs</h2>
+                    <p class="text-lg mb-6">Founded in 2019, Jorhat Cabs has been providing reliable transportation
+                        services to residents and visitors of Jorhat. What started as a small business with two cars has
+                        now grown into the most trusted cab service in the region.</p>
+                    <div class="flex space-x-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">1k+</div>
+                            <div class="text-sm">Happy Customers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">10k+</div>
+                            <div class="text-sm">KM Covered Daily</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="booking.html">Book Now</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> A.T Road, Pulibor Tiniali, Jorhat, Assam</p>
-                    <p><i class="fas fa-phone"></i> +91 9864888946 </p>
-                    <p><i class="fas fa-envelope"></i> jorharbestcab@gmail.com</p>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Jorhat Cabs. All rights reserved.</p>
-        </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Smooth Scrolling for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                navLinks.classList.remove('active');
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        // Animation on Scroll
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.fade-in');
-
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-
-                if (elementPosition < windowHeight - 50) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        }
-
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-    </script>
-
-
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white p-6 rounded-lg">
+                        <div class="flex mb-4">
+                            <div class="flex-shrink-0 mr-4 text-blue-600">
+                                <i class="fas fa-bullseye text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Our Mission</h3>
+                                <p class="text-gray-600">To provide safe, reliable and affordable transportation
+                                    solutions for everyone in Jorhat.</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4">
+                            <div class="flex-shrink-0 mr-4 text-blue-600">
+                                <i class="fas fa-eye text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Our Vision</h3>
+                                <p class="text-gray-600">To be the most preferred cab service in Assam through
+                                    exceptional customer service.</p>
+                            </div>
+                        </div>
+                        <div class="flex mb-4">
+                            <div class="flex-shrink-0 mr-4 text-blue-600">
+                                <i class="fas fa-phone text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">Contact Us</h3>
+                                <a href="tel:+919864888946" class="text-gray-600">+91 9864888946</a>
+                                <p><i class="fas fa-envelope text-gray-800"></i><span class="text-gray-600">  jorharbestcab@gmail.com</span></p>
+                            </div>
+                        </div>
 </body>
 
 </html>
