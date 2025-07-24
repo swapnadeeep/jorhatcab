@@ -1,0 +1,226 @@
+<!-- Fleets Section -->
+    <section id="fleets" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Fleets</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Choose from our variety of well-maintained vehicles.</p>
+            </div>
+            <div class="flex overflow-x-auto pb-8 fleets-slider scroll-smooth">
+                <div class="flex-none w-72 mr-6 fleet-card">
+                    <div class="bg-gray-100 rounded-t-lg h-48 overflow-hidden">
+                        <img src="https://placehold.co/600x400" alt="White hatchback car parked in urban setting with modern city buildings in background" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="bg-white p-4 rounded-b-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Hatchback</h3>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Seats:</span>
+                            <span class="font-medium">4</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">AC:</span>
+                            <span class="font-medium">Yes</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Price:</span>
+                            <span class="font-medium text-blue-600">₹10/km</span>
+                        </div>
+                        <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium transition duration-300">Book This Car</button>
+                    </div>
+                </div>
+                <div class="flex-none w-72 mr-6 fleet-card">
+                    <div class="bg-gray-100 rounded-t-lg h-48 overflow-hidden">
+                        <img src="https://placehold.co/600x400" alt="Silver sedan car on highway with blurred motion effect" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="bg-white p-4 rounded-b-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sedan</h3>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Seats:</span>
+                            <span class="font-medium">4</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">AC:</span>
+                            <span class="font-medium">Yes</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Price:</span>
+                            <span class="font-medium text-blue-600">₹13/km</span>
+                        </div>
+                        <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium transition duration-300">Book This Car</button>
+                    </div>
+                </div>
+                <div class="flex-none w-72 mr-6 fleet-card">
+                    <div class="bg-gray-100 rounded-t-lg h-48 overflow-hidden">
+                        <img src="https://placehold.co/600x400" alt="Black luxury car in premium showroom with elegant lighting" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="bg-white p-4 rounded-b-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Premium</h3>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Seats:</span>
+                            <span class="font-medium">4</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">AC:</span>
+                            <span class="font-medium">Yes</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Price:</span>
+                            <span class="font-medium text-blue-600">₹18/km</span>
+                        </div>
+                        <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium transition duration-300">Book This Car</button>
+                    </div>
+                </div>
+                <div class="flex-none w-72 mr-6 fleet-card">
+                    <div class="bg-gray-100 rounded-t-lg h-48 overflow-hidden">
+                        <img src="https://placehold.co/600x400" alt="White SUV on mountain road with scenic valley view" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="bg-white p-4 rounded-b-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SUV</h3>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Seats:</span>
+                            <span class="font-medium">7</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">AC:</span>
+                            <span class="font-medium">Yes</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Price:</span>
+                            <span class="font-medium text-blue-600">₹15/km</span>
+                        </div>
+                        <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium transition duration-300">Book This Car</button>
+                    </div>
+                </div>
+                <div class="flex-none w-72 fleet-card">
+                    <div class="bg-gray-100 rounded-t-lg h-48 overflow-hidden">
+                        <img src="https://placehold.co/600x400" alt="People carrier van with sliding doors in urban environment" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="bg-white p-4 rounded-b-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">People Carrier</h3>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Seats:</span>
+                            <span class="font-medium">10</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">AC:</span>
+                            <span class="font-medium">Yes</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-600">Price:</span>
+                            <span class="font-medium text-blue-600">₹20/km</span>
+                        </div>
+                        <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium transition duration-300">Book This Car</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-4">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">View All Vehicles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drivers Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Meet Our Drivers</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Professional and courteous drivers for your comfort.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md driver-card transition duration-300">
+                    <div class="driver-image h-56 overflow-hidden transition duration-300">
+                        <img src="https://placehold.co/600x800" alt="Smiling male driver in formal uniform standing beside car" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Rajiv Sharma</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-sm text-gray-600">4.7 (120 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Professional driver with 8 years experience in Jorhat.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Safe Driver</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Punctual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md driver-card transition duration-300">
+                    <div class="driver-image h-56 overflow-hidden transition duration-300">
+                        <img src="https://placehold.co/600x800" alt="Female driver in professional attire beside her vehicle" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Priya Das</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-600">5.0 (97 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">5-star rated driver specializing in airport transfers.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Expert</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Courteous</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md driver-card transition duration-300">
+                    <div class="driver-image h-56 overflow-hidden transition duration-300">
+                        <img src="https://placehold.co/600x800" alt="Experienced male driver in uniform with arms crossed" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Amit Patel</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-600">4.9 (156 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">15 years experience with premium vehicle service.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Luxury</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Professional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md driver-card transition duration-300">
+                    <div class="driver-image h-56 overflow-hidden transition duration-300">
+                        <img src="https://placehold.co/600x800" alt="Young driver smiling while holding car keys" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Arjun Barua</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-600">4.3 (84 reviews)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Specializes in city tours and knowledgeable about Jorhat.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Guide</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Friendly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">Join Our Driver Team</button>
+            </div>
+        </div>
+    </section>
