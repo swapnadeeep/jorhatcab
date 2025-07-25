@@ -57,24 +57,21 @@
         }
 
         // Pre-fill car type if specified in URL
-        const carType = getUrlParameter('car');
-        if (carType) {
-            document.getElementById('car-type').value = carType;
-        }
+        
 
-        function submitBooking() {
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const pickup = document.getElementById('pickup').value;
-            const destination = document.getElementById('destination').value;
-            const carType = document.getElementById('car-type').value;
-            const date = document.getElementById('date').value;
-            const time = document.getElementById('time').value;
+        document.getElementById('submitBooking').addEventListener('click', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const pickup = document.getElementById('pickup').value;
+      const drop = document.getElementById('drop').value;
+      const datetime = document.getElementById('datetime').value;
+      const msg = document.getElementById('message').value;
 
-            const message = `New Booking Request:%0A%0AName: ${name}%0APhone: ${phone}%0APickup: ${pickup}%0ADestination: ${destination}%0ADate: ${date}%0ATime: ${time}`;
-
-            window.open(`https://wa.me/919864888946?text=${message}`, '_blank');
-        }
+      const text = `Hi, I want to book a cab.%0A%0AName: ${name}%0APhone: ${phone}%0APickup: ${pickup}%0ADrop: ${drop}%0ATime: ${datetime}%0AMessage: ${msg}`;
+      const url = `https://wa.me/919864888946?text=${text}`;
+      window.open(url, '_blank');
+    });
     </script>
 </head>
 
